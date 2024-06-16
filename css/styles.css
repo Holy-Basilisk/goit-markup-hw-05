@@ -14,7 +14,7 @@
 	--colorLightSlate: #8E8F99;
 	--colorCornflower: #E7E9FC;
 	--colorCloud: #F4F4FD;
-	--colorNavyBlueModal: #2E2F4265; /* #2E2F42 40% */
+	--colorNavyBlueModal: #2E2F4266; /* #2E2F42 40% */
 	--colorGrey: #2E2F42b2; /* #2E2F42 70% */
 
 	/*color definition*/
@@ -456,3 +456,51 @@ body {
 }
 
 .version {display: none}
+
+.modal-overlay {
+	position: fixed;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+	z-index: 999;
+	background-color: var(--colorNavyBlueModal);
+	display: flex;
+	justify-content: center;
+	align-items: center;
+
+	opacity: 0;
+	pointer-events: none;
+}
+
+.modal-overlay.is-open {
+	opacity: 1;
+	pointer-events: auto;
+}
+
+.modal {
+	background-color: var(--backgroundColorWhite);
+	max-width: 408px;
+	max-height: 90%;
+	border-radius: 4px;
+	overflow-y: auto;
+
+	display: flex;
+	flex-direction: column;
+	padding: 24px;
+}
+
+.form-label,
+.call-back-form input,
+.call-back-form textarea {
+	display: block;
+}
+
+.close-btn {
+	/* position: absolute; */
+	top: 24px;
+	right: 48px;
+	width: 24px;
+	height: 24px;
+	border-radius: 50%;
+}
