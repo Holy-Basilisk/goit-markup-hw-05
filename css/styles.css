@@ -531,7 +531,7 @@ body {
 	top: 50%;
 	left: 50%;
 	transform: translate(-50%, -50%);
-	max-width: 408px;
+	width: 408px;
 	min-height: 584px;
 	border-radius: 4px;
 	overflow-y: auto;
@@ -654,13 +654,13 @@ body {
 	fill: transparent;
 }
 
-.input-terms:checked + .checkbox .checkbox-span {
+.input-user-privacy:checked + .checkbox .checkbox-span {
 	background-color: var(--colorOcean);
 	border: none;
 	fill: var(--colorCloud);
 }
 
-.link.terms {color: var(--colorIris);}
+.link.user-privacy {color: var(--colorIris);}
 
 .submit-btn {
 	display: block;
